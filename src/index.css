@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --primary-color: #007bff;
+  --primary-color-hover: #0056b3;
+  --border-color: #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.blurry-ball {
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.6) 0%, rgba(255, 0, 0, 0.5) 50%, rgba(255, 0, 0, 0) 100%);
+  filter: blur(20px);
+}
+
+@media (min-width: 1024px) {
+  .responsive-heading {
+      font-size: 3vw; /* This will apply on larger screens */
+  }
+}
